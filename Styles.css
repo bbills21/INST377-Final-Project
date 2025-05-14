@@ -1,0 +1,208 @@
+/* Style for the header */
+/* Style for the header */
+header {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; /* Add spacing between the elements */
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    width: 100%;
+    padding: 10px 20px; /* Add padding around the header */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Style for the logo and header text */
+header .logo {
+    width: 50px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the navigation */
+header nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    gap: 15px; /* Add spacing between navigation links */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    width: 100%; /* Full width */
+    justify-content: center; /* Center the navigation items */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color */
+    font-size: 16px; /* Adjust font size */
+}
+
+nav ul li:hover {
+    background: blue; /* Change background color on hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.custom-btn {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #999;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.audio-controls {
+    margin: 50px auto;
+    padding: 20px;
+    background: #eaeaea;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 80%;
+    box-sizing: border-box;
+    box-align: center;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Carousel styling */
+.Carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+}
+
+.Carousel img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+/* Filter container layout */
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Genre box styling */
+.genre-box, .anime-box {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style for the genre filter container */
+#genre-filter {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    gap: 10px; /* Add spacing between items */
+    margin: 20px 0; /* Add some margin around the filter */
+}
+
+/* Style for each genre label */
+#genre-filter label {
+    display: flex;
+    align-items: center; /* Align checkbox and text vertically */
+    cursor: pointer; /* Add a pointer cursor for better UX */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Text color */
+}
+
+/* Style for the checkboxes */
+#genre-filter input[type="checkbox"] {
+    margin-right: 10px; /* Add spacing between checkbox and text */
+}
+
+/* Style for the anime list */
+#anime-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for the anime list */
+.anime-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.anime-thumbnail {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.anime-info {
+    flex: 1;
+}
+
+.anime-info h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.anime-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+#anime-list li {
+    margin-bottom: 5px;
+}
