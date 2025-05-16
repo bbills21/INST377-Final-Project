@@ -1,0 +1,26 @@
+{
+  "name": "inst377-final-project",
+  "version": "1.0.0",
+  "description": "Folder holding code for final project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e '*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbills21/INST377-Final-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbills21/INST377-Final-Project/issues"
+  },
+  "homepage": "https://github.com/bbills21/INST377-Final-Project#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

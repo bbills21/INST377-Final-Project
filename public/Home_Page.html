@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw" alt = "MAL Logo" class="logo">
+            <h1>Home Page</h1>
+            <nav>
+                <ul>
+                    <li><a href= "Home_Page.html">Home</a></li>
+                    <li><a href= "About_Page.html">About</a></li>
+                    <li><a href= "Working_Page.html">Anime</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <h2>Welcome to the Anime Page</h2>
+            <p>Here you can find information about your favorite anime series, including their genres, descriptions, and MAL rankings.</p>
+        </main>
+
+        <div class ="search-container">
+            <h3>Search for Anime</h3>
+            <p>Type the name of the anime you want to search for in the input box below.</p>
+            <p>Click the button to search for the anime.</p>
+            <input type="text" id="search-input" placeholder="Search for an anime...">
+            <button class = "custom-btn" onclick="fetchAnimeData(document.getElementById('search-input').value)">Search</button>
+        </div>
+
+        <div class="voice-command">
+            <h3>Voice Command</h3>
+            <p>Click the button below to use voice commands to search for a specific anime.</p>
+            <p>Say the name of the anime you want to search for.</p>
+            <p>For example, you can say "Search for Frieren"</p>
+            <button onclick="annyang.start()">Start Voice Command</button>
+            <button onclick="annyang.abort()">Stop Voice Command</button>
+    
+
+        <div id ="anime-container">
+            <h3>Anime Details</h3>
+            <!-- Anime details will be dynamically generated here -->
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+        <script src="voice.js"></script>
+    </body>
+
+</html>
