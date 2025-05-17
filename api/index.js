@@ -17,6 +17,10 @@ const supabaseUrl = process.env.SUPABASE_URL; // Use environment variable for se
 const supabaseKey = process.env.SUPABASE_KEY; // Use environment variable for security
 const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey);
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html'); // Serve the main HTML file
+});
+
 app.get('/api/data', async (req, res) => {
     const { data, error } = await supabase.from('anime').select('*');
     if (error) {

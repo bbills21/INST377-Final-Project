@@ -2,9 +2,9 @@
   "name": "inst377-final-project",
   "version": "1.0.0",
   "description": "Folder holding code for final project",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "nodemon -e '*'",
+    "start": "nodemon api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
