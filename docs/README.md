@@ -14,7 +14,7 @@ The second, is in my anime tab where there is a slider that shows images yousing
 This page is used to descripe this project and application. 
 
 ### Target Browsers:
-I would use iOS Safari and most of my testing is conducted in google chrome. 
+I would use iOS Safari and most of my testing was conducted in google chrome. 
 
 _____________________________________________________________________________
 ## Developer Manual
@@ -25,23 +25,65 @@ _____________________________________________________________________________
     git clone https://github.com/bbills21/INST377-Final-Project.git
 
 2. navigate to project folder: 
-    cd "location"
+    ```bash
+    cd INST377-Final-Project/INST366-Final-Project
+    ```
 
 3. Install Node.js:
+    ```bash
     npm install
+    ```
 
 ### Server Application
+1. start the development server
+    ```bash
+    npm start
+    ```
+   This will run the server using nodemon and serve static files from the `/public` directory.
 
+2. Open your browser and go to:
+    ```
+    http://localhost:3000/
+    ```
 
 ### Test Running
-1. run test: 
-    npm test
 
-2. Have a testing framework installed
+1. To run tests (if any are implemented):
+    ```bash
+    npm test
+    ```
+   **Note:** You must have a testing framework (like Jest or Mocha) installed and configured.
+
 
 ### API Application
-1. Jikan API: 
-    Used to fetch anime data
+#### **GET `/api/data`**
+**Description:** Retrieves all anime records from the Supabase database.
+**Response:**  
+    ```json
+    [
+      {
+        "anime_title": "Cowboy Bebop",
+        "anime_score": 9,
+        "anime_genres": "Action, Sci-Fi",
+        "anime_description": "Space bounty hunters."
+      },
+      ...
+    ]
+    ```
+#### **POST `/api/data`**
+**Description:** Adds a new anime record to the Supabase database.
+**Request Body:**
+    ```json
+    {
+      "title": "Cowboy Bebop",
+      "score": 9,
+      "genres": "Action, Sci-Fi",
+      "description": "Space bounty hunters."
+    }
+    ```
+**Response:**  
+    Returns the inserted record.
+
 
 ## Bugs and Roadmap
 ### Bugs
@@ -54,6 +96,6 @@ _____________________________________________________________________________
 ### Roadmap:
 1. improved voice handling.
 2. allows users to see multiple results for a single query.
-3. enhanced UI/UX design: 
-4. offline support: 
-5. imroved testing
+3. enhanced UI/UX design.
+4. offline support.
+5. imroved testing.
